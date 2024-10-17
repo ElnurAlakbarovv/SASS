@@ -1,0 +1,132 @@
+@import 'reset';
+@import 'variables';
+
+.navbar {width: 100%;
+	height: 5.6rem;
+	padding: 1rem 3rem;
+	margin: 0;
+    @extend .flexEx;
+	justify-content: space-around;
+	background-color: $background-color_1;
+    .shop-cart{@extend .flexEx;
+        gap: .7rem;
+        border: 1px solid #212529;
+        padding: 0.5rem 1.5rem;
+        border-radius: .8rem;
+    }p{
+        background-color: #212529;
+        border-radius: 50%;
+        color:white;
+        padding:0 .6rem;
+    }
+    h2{
+        padding-right: 2.5rem;
+    }
+}
+.shop-cart{ transition:all .2s;
+    i{font-size: 1.2rem;}
+&:hover{
+    color: white;
+    background-color:#212529;
+   
+}
+}
+.nav-items {@extend .flexEx;
+	gap: 2rem;
+	justify-content: space-between;
+    cursor: pointer;
+    span{
+        color: #0000008c;
+        &:hover{
+            color: #212529;
+        }
+    }
+}
+.slogan {width: 100%;
+	height: 29.8rem;
+	background-color: $background-color_2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+    h1{
+        font-size: 5.6rem; color: $color_3;
+    }
+    p{
+        font-size: 2rem; color: $fragmanText;
+    }
+}
+.carts-section {padding: 5rem 3rem;
+	gap: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.cart {margin: 0 1rem;
+	margin-bottom: 3rem;
+    @extend .flexEx;
+	flex-direction: column;
+	width: 27rem;
+	height: 37.5rem;
+	border: 1px solid rgb(209, 206, 206);
+	border-radius: 1rem;
+    position: relative;
+	img {
+		border: none;
+		border-radius: 1rem 1rem 0 0;
+        width: 27rem; height: 17.9rem
+	}
+    .sale-tag{ background-color: #212529;
+        color: white;
+        padding: .1rem 1rem;
+        border-radius: .7rem;
+        position: absolute;
+    top: 1rem;
+right: 1rem;}
+}
+.cart-body {
+	width: 27rem;
+	height: 13.3rem;
+	text-align: center;
+	margin-top: 2rem;
+    i{color:  $starColor;
+    }
+}
+.cart-footer {
+	width: 27rem;
+	height: 6.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.cart-button {
+	font-size: 1.6rem;
+	width: 11.8rem;
+	height: 3.8rem;
+	background-color: $background-color_3;
+	border: 1px solid #212529;
+	border-radius: .5rem;
+	color: $color_2;
+    transition: all .7s;
+    cursor: pointer;
+    &:hover{
+        color: white;
+        background-color: #212529;
+    }
+}
+.star {
+	margin-top: 8px;
+}
+.footer {
+	width: 100%;
+	height: 12rem;
+	background-color: $background-color_2;
+	color: $color_3;
+    @extend .flexEx;
+	justify-content: center;
+	font-size: 1.6rem;
+}
+.flexEx{
+    display: flex;
+    align-items: center;
+}
